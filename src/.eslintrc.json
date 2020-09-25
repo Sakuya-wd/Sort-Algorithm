@@ -9,5 +9,6 @@
         "ecmaVersion": 12
     },
     "rules": {
+    "no-constant-condition": ["error", { "checkLoops": false }]
     }
 }
