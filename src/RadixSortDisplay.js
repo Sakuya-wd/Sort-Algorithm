@@ -3,12 +3,12 @@
 const RadixSortConfirm = require("./RadixSortConfirm.js");
 
 const RadixSortDisplay = () => {
-  //ソートするデータ。
+  //ソート元のデータ。
   let array = [101, 103, 108, 102, 105, 100, 104, 109, 107, 106, 110, 200];
 
   console.log(`ソート前 ${array}`);
 
-  const result = RadixSortConfirm(array);
+  let result = RadixSortConfirm(array);
   console.log(`ソート後 ${result}`);
 };
 
