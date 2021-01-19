@@ -1,6 +1,8 @@
 # ソートアルゴリズム
 
-バブル、バケット、基数、ヒープ、マージ、クイック、選択、挿入、sortメソッドのプログラムを用意しました。
+バブル、バケット、基数、ヒープ、マージ、クイック、選択、挿入の各ソートアルゴリズムと
+
+sortメソッドのプログラムを用意しました。
 
 ## 開発環境
 
@@ -20,7 +22,7 @@ Node.js: (バージョンv14.7.0)
 
 使用パッケージ: ESLint Prettier husky lint-staged
 
-# バブル
+# バブルソート
 
 ## プログラム仕様
 
@@ -52,7 +54,7 @@ srcディレクトリ内にてプログラム実行コマンドを願います�
 プログラム実行コマンド
 
 ```
-node BubbleDisplay.js
+node BubbleSortDisplay.js
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -76,7 +78,7 @@ rm -rf node_modules
 
 ## テスト実行
 
-テnode_modulesのインストールを願います。
+node_modulesのインストールを願います。
 
 インストールコマンド
 
@@ -84,7 +86,13 @@ rm -rf node_modules
 npm install 
 ```
 
-テスト実行コマンド
+バブルソートのテスト実行コマンド
+
+```
+jest BubbleSortConfirm.test.js
+```
+
+全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
 npm run test
@@ -100,10 +108,14 @@ rm -rf node_modules
 
 ## カバレッジ
 
-下記ディレクトリをブラウザで表示願います。
+・ Chromeのブラウザを起動願います。
+
+・ ファイルからファイルを開くを選択してください。
+
+・ 下記ファイルをブラウザで表示願います。
 
 ```
-coverage/lcov-report/
+coverage/lcov-report/index.html
 ```
 
 ## 構文チェックと自動コード整形
@@ -116,7 +128,7 @@ git comit時にgit addしたjsファイルの構文チェックを行います�
 
 構文にerrorとwarningがない場合は自動でコード整形します。
 
-# バケット
+# バケットソート
 
 ## プログラム仕様
 
@@ -146,7 +158,7 @@ srcディレクトリ内にてプログラム実行コマンドを願います�
 プログラム実行コマンド
 
 ```
-node BucketDisplay.js
+node BucketSortDisplay.js
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -178,7 +190,13 @@ node_modulesのインストールを願います。
 npm install 
 ```
 
-テスト実行コマンド
+バケットソートのテスト実行コマンド
+
+```
+jest BucketSortConfirm.test.js
+```
+
+全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
 npm run test
@@ -194,10 +212,14 @@ rm -rf node_modules
 
 ## カバレッジ
 
-下記ディレクトリをブラウザで表示願います。
+・ Chromeのブラウザを起動願います。
+
+・ ファイルからファイルを開くを選択してください。
+
+・ 下記ファイルをブラウザで表示願います。
 
 ```
-coverage/lcov-report/
+coverage/lcov-report/index.html
 ```
 
 ## 構文チェックと自動コード整形
@@ -210,7 +232,7 @@ git comit時にgit addしたjsファイルの構文チェックを行います�
 
 構文にerrorとwarningがない場合は自動でコード整形します。
 
-# 基数
+# 基数ソート
 
 ## プログラム仕様
 
@@ -251,7 +273,7 @@ srcディレクトリ内にてプログラム実行コマンドを願います�
 プログラム実行コマンド
 
 ```
-node RadixDisplay.js
+node RadixSortDisplay.js
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -283,7 +305,13 @@ node_modulesのインストールを願います。
 npm install 
 ```
 
-テスト実行コマンド
+基数ソートのテスト実行コマンド
+
+```
+jest RadixSortConfirm.test.js
+```
+
+全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
 npm run test
@@ -299,10 +327,14 @@ rm -rf node_modules
 
 ## カバレッジ
 
-下記ディレクトリをブラウザで表示願います。
+・ Chromeのブラウザを起動願います。
+
+・ ファイルからファイルを開くを選択してください。
+
+・ 下記ファイルをブラウザで表示願います。
 
 ```
-coverage/lcov-report/
+coverage/lcov-report/index.html
 ```
 
 ## 構文チェックと自動コード整形
@@ -316,7 +348,7 @@ git comit時にgit addしたjsファイルの構文チェックを行います�
 構文にerrorとwarningがない場合は自動でコード整形します。
 
 
-# ヒープ
+# ヒープソート
 
 ・ 配列は正の整数とする。配列は`[1,3,8,2,5,0,4,9,7,6]`をデフォルトとする。
 
@@ -349,7 +381,7 @@ srcディレクトリ内にてプログラム実行コマンドを願います�
 プログラム実行コマンド
 
 ```
-node HeapDisplay.js
+node HeapSortDisplay.js
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -381,7 +413,13 @@ node_modulesのインストールを願います。
 npm install 
 ```
 
-テスト実行コマンド
+ヒープソートのテスト実行コマンド
+
+```
+jest HeapSortConfirm.test.js
+```
+
+全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
 npm run test
@@ -397,10 +435,14 @@ rm -rf node_modules
 
 ## カバレッジ
 
-下記ディレクトリをブラウザで表示願います。
+・ Chromeのブラウザを起動願います。
+
+・ ファイルからファイルを開くを選択してください。
+
+・ 下記ファイルをブラウザで表示願います。
 
 ```
-coverage/lcov-report/
+coverage/lcov-report/index.html
 ```
 
 ## 構文チェックと自動コード整形
@@ -413,7 +455,7 @@ git comit時にgit addしたjsファイルの構文チェックを行います�
 
 構文にerrorとwarningがない場合は自動でコード整形します。
 
-# マージ
+# マージソート
 
 ・ 配列は正の整数とする。配列は`[1,3,8,2,5,0,4,9,7,6]`をデフォルトとする。
 
@@ -440,7 +482,7 @@ srcディレクトリ内にてプログラム実行コマンドを願います�
 プログラム実行コマンド
 
 ```
-node MergeDisplay.js
+node MergeSortDisplay.js
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -472,7 +514,13 @@ node_modulesのインストールを願います。
 npm install 
 ```
 
-テスト実行コマンド
+マージソートのテスト実行コマンド
+
+```
+jest MergeSortConfirm.test.js
+```
+
+全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
 npm run test
@@ -488,10 +536,14 @@ rm -rf node_modules
 
 ## カバレッジ
 
-下記ディレクトリをブラウザで表示願います。
+・ Chromeのブラウザを起動願います。
+
+・ ファイルからファイルを開くを選択してください。
+
+・ 下記ファイルをブラウザで表示願います。
 
 ```
-coverage/lcov-report/
+coverage/lcov-report/index.html
 ```
 
 ## 構文チェックと自動コード整形
@@ -504,7 +556,7 @@ git comit時にgit addしたjsファイルの構文チェックを行います�
 
 構文にerrorとwarningがない場合は自動でコード整形します。
 
-# クイック
+# クイックソート
 
 ## プログラム仕様
 
@@ -537,7 +589,7 @@ srcディレクトリ内にてプログラム実行コマンドを願います�
 プログラム実行コマンド
 
 ```
-node QuickDisplay.js
+node QuickSortDisplay.js
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -569,7 +621,13 @@ node_modulesのインストールを願います。
 npm install 
 ```
 
-テスト実行コマンド
+クイックソートのテスト実行コマンド
+
+```
+jest QuickSortConfirm.test.js
+```
+
+全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
 npm run test
@@ -585,10 +643,14 @@ rm -rf node_modules
 
 ## カバレッジ
 
-下記ディレクトリをブラウザで表示願います。
+・ Chromeのブラウザを起動願います。
+
+・ ファイルからファイルを開くを選択してください。
+
+・ 下記ファイルをブラウザで表示願います。
 
 ```
-coverage/lcov-report/
+coverage/lcov-report/index.html
 ```
 
 ## 構文チェックと自動コード整形
@@ -601,7 +663,7 @@ git comit時にgit addしたjsファイルの構文チェックを行います�
 
 構文にerrorとwarningがない場合は自動でコード整形します。
 
-# 選択
+# 選択ソート
 
 ・ 配列は正の整数とする。配列は`[1,3,8,2,5,0,4,9,7,6]`をデフォルトとする。
 
@@ -628,7 +690,7 @@ srcディレクトリ内にてプログラム実行コマンドを願います�
 プログラム実行コマンド
 
 ```
-node SelectionDisplay.js
+node SelectionSortDisplay.js
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -660,7 +722,13 @@ node_modulesのインストールを願います。
 npm install 
 ```
 
-テスト実行コマンド
+選択ソートのテスト実行コマンド
+
+```
+jest SelectionSortConfirm.test.js
+```
+
+全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
 npm run test
@@ -676,10 +744,14 @@ rm -rf node_modules
 
 ## カバレッジ
 
-下記ディレクトリをブラウザで表示願います。
+・ Chromeのブラウザを起動願います。
+
+・ ファイルからファイルを開くを選択してください。
+
+・ 下記ファイルをブラウザで表示願います。
 
 ```
-coverage/lcov-report/
+coverage/lcov-report/index.html
 ```
 
 ## 構文チェックと自動コード整形
@@ -692,7 +764,7 @@ git comit時にgit addしたjsファイルの構文チェックを行います�
 
 構文にerrorとwarningがない場合は自動でコード整形します。
 
-# 挿入
+# 挿入ソート
 
 ## プログラム仕様
 
@@ -719,7 +791,7 @@ srcディレクトリ内にてプログラム実行コマンドを願います�
 プログラム実行コマンド
 
 ```
-node InsertionDisplay.js
+node InsertionSortDisplay.js
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -751,7 +823,13 @@ node_modulesのインストールを願います。
 npm install 
 ```
 
-テスト実行コマンド
+挿入ソートのテスト実行コマンド
+
+```
+jest InsertionSortConfirm.test.js
+```
+
+全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
 npm run test
@@ -767,10 +845,14 @@ rm -rf node_modules
 
 ## カバレッジ
 
-下記ディレクトリをブラウザで表示願います。
+・ Chromeのブラウザを起動願います。
+
+・ ファイルからファイルを開くを選択してください。
+
+・ 下記ファイルをブラウザで表示願います。
 
 ```
-coverage/lcov-report/
+coverage/lcov-report/index.html
 ```
 
 ## 構文チェックと自動コード整形
@@ -838,7 +920,13 @@ node_modulesのインストールを願います。
 npm install 
 ```
 
-テスト実行コマンド
+sortメソッドのテスト実行コマンド
+
+```
+jest SortFunctionConfirm.test.js
+```
+
+全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
 npm run test
