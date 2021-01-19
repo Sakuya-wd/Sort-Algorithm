@@ -1,52 +1,42 @@
 //git commit時にeslintで構文チェックしprettierでコードフォーマットを修正する。
 
 const BucketSortConfirm = (array) => {
-  //ソートするデータが配列でない時エラー(例外)を出力する。
   if (DifferentTypeObject(array)) {
-    throw new TypeError("引数が不正です。配列で指定してください。");
-
-    //ソートするデータの配列が空の時エラー(例外)を出力する。
-  } else if (EmptyArray(array)) {
-    throw new RangeError("引数が不正です。配列が空です。");
-
-    //ソートするデータの配列に数字以外が入力された時エラー(例外)を出力する。
-  } else if (array.some(DifferentTypeString)) {
-    throw new TypeError("引数が不正です。配列に数字以外が入力されています。");
-
-    //ソートするデータの配列に正の整数以外が入力された時エラー(例外)を出力する。
-  } else if (array.some(OutOfRange)) {
-    throw new RangeError("引数が不正です。配列に正の整数を入力してください。");
-
-    //ソートするデータの配列が正の整数なら昇順に整列する。
-  } else {
-    let result = BucketSort(array);
-
-    return result;
+    throw new TypeError(
+      "引数が配列ではありません。引数は配列とし正の整数のみ設定下さい。"
+    );
   }
+
+  if (EmptyArray(array)) {
+    throw new RangeError(
+      "引数の配列が空です。引数は配列とし正の整数のみ設定下さい。"
+    );
+  }
+
+  if (array.some(DifferentTypeString)) {
+    throw new TypeError(
+      "引数の配列に正の整数以外があります。引数は配列とし正の整数のみ設定下さい。"
+    );
+  }
+
+  //引数の配列が正の整数のみの時、配列を昇順に整列する。
+  return BucketSort(array);
 };
 
 const DifferentTypeObject = (array) => {
   if (typeof array !== "object") return true;
-
   return false;
 };
 
 const EmptyArray = (array) => {
-  if (array.length === 0) return true;
-
+  if (array.length == 0) return true;
   return false;
 };
 
 const DifferentTypeString = (array) => {
   if (typeof array === "string") return true;
-
-  return false;
-};
-
-const OutOfRange = (array) => {
   if (Math.round(array) != array) return true;
   if (Math.sign(array) == -1) return true;
-
   return false;
 };
 
