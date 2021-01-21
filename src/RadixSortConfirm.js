@@ -9,7 +9,7 @@ const RadixSortConfirm = (array) => {
 
   if (EmptyArray(array)) {
     throw new RangeError(
-      "引数の配列が空です。引数は配列とし正の整数のみ設定下さい。"
+      "引数の配列が空です。引数は配列とし正の整数を設定下さい。"
     );
   }
 
