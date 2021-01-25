@@ -41,8 +41,8 @@ const DifferentTypeString = (array) => {
 };
 
 const BubbleSort = (array) => {
+  //ソート済みの配列を除ていき、全ての値をソートしていく。
   for (let i = 0; i < array.length; i++) {
-    //ソート済みの配列を除ていき、全ての値をソートしていく。
     for (let j = 0; j < array.length - i; j++) {
       //配列の先頭と右隣を比較し、配列の先頭が大きいなら配列の先頭と右隣を交換する。先頭を一つ右に移動する。
       //同様に終端まで左右の比較を行い終端には最も大きい値がソートされる。

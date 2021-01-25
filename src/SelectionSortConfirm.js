@@ -52,8 +52,9 @@ const SelectionSort = (array) => {
         min = array[j];
         count = j;
       }
-    } //配列にある一番小さい値を先頭に格納する。
+    }
 
+    //配列にある一番小さい値を先頭に格納する。
     let tmp = array[i];
     array[i] = array[count];
     array[count] = tmp;

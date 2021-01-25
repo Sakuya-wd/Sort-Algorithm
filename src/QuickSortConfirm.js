@@ -68,7 +68,7 @@ const Swap = (array, begin, end) => {
       right--;
     }
 
-    //取得した値を入れ替えれなくなったらループを終了する。
+    //取得した値が入れ替えれなくなったらループを終了する。
     if (right <= left) {
       break;
     }
@@ -82,12 +82,12 @@ const Swap = (array, begin, end) => {
     right--;
   }
 
-  //pivotより左側を分割しながら再帰的にクイックソートを実行する。
+  //pivotより左側を分割しながら再帰的にソートを実行する。
   if (begin < left - 1) {
     Swap(array, begin, left - 1);
   }
 
-  //pivotより右側を分割しながら再帰的にクイックソートを実行する。
+  //pivotより右側を分割しながら再帰的にソートを実行する。
   if (right + 1 < end) {
     Swap(array, right + 1, end);
   }

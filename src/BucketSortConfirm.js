@@ -54,8 +54,9 @@ const BucketSort = (array) => {
   //バケットから値を取り出したあと格納するための配列を用意する。
   for (let i = 0; i < array.length; i++) {
     TakeOutArray[i] = 0;
-  } //配列の先頭から値を取り出し、値と一致する番号を持つバケットに格納する。
+  }
 
+  //配列の先頭から値を取り出し、値と一致する番号を持つバケットに格納する。
   for (let i = 0; i <= Math.max.apply(null, array); i++) {
     BucketCnt = array[i];
     BucketArray[BucketCnt]++;
