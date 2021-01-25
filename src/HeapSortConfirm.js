@@ -41,9 +41,9 @@ const DifferentTypeString = (array) => {
 };
 
 const HeapSort = (array) => {
-  //格納するための配列を用意する。
   let TakeOutArray = [];
-
+  
+  //格納するための配列を用意する。
   for (let i = 0; i < array.length; i++) {
     TakeOutArray[i] = 0;
   }
