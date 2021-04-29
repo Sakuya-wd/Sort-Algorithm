@@ -99,7 +99,7 @@ jest BubbleSortConfirm.test.js
 全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
-npm run test
+jest
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -203,7 +203,7 @@ jest BucketSortConfirm.test.js
 全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
-npm run test
+jest
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -310,7 +310,7 @@ jest HeapSortConfirm.test.js
 全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
-npm run test
+jest
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -411,7 +411,7 @@ jest InsertionSortConfirm.test.js
 全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
-npm run test
+jest
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -512,7 +512,7 @@ jest MergeSortConfirm.test.js
 全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
-npm run test
+jest
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -619,7 +619,7 @@ jest QuickSortConfirm.test.js
 全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
-npm run test
+jest
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -734,7 +734,7 @@ jest RadixSortConfirm.test.js
 全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
-npm run test
+jest
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -835,7 +835,7 @@ jest SelectionSortConfirm.test.js
 全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
-npm run test
+jest
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
@@ -932,7 +932,7 @@ jest SortFunctionConfirm.test.js
 全ソートアルゴリズムとsortメソッドの一斉テスト実行コマンド
 
 ```
-npm run test
+jest
 ```
 
 Error: Cannot find moduleが出た場合はnode_modulesを削除し再度インストール願います。
